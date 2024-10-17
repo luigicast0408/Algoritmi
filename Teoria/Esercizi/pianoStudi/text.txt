@@ -1,0 +1,7 @@
+Si supponga di dover compilare il proprio piano di studi universitario scegliendo l'elenco degli esami da un elenco di insegnamenti erogati dal proprio Corso di Laurea.
+Al tal fine si supponga che gli insegnamenti disponibili siano in tutto n, e che ad ogni insegnamento sia associato un numero di CFU e un livello di difficoltà.
+Nello specifico, sono forniti due vettori, C e D, di dimensione n, per cui i crediti formativi dell'i-esimo insegnamento sono C[i] e il livello di difficoltà dell'insegnamento è D[i].
+La difficoltà del piano di studi scelto è data dalla somma dei livelli di difficoltà degli insegnamenti selezionati. Per completare il percorso di studi bisogna acquisire ALMENO M crediti formativi.
+Di conseguenza la somma dei crediti delle materie nel proprio piano di studi deve essere almeno M.
+Si definisca una funzione ricorsiva che permetta di calcolare il livello minimo di difficoltà del piano di studi.
+(La funzione ricorsiva dovrà prendere in input i parametri M, C, D e n)

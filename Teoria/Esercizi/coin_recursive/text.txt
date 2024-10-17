@@ -1,0 +1,15 @@
+Si supponga di dover implementare una procedura che sia in grado di fornire automaticamente il resto a seguito di un pagamento. A tal fine si supponga di avere a disposizione delle monete di n tagli differenti, e sia T un array di n elementi contenente il valore dei tagli disponibili. Si supponga, inoltre, sia R il valore del resto da fornire, con R maggiore o uguale a 0.
+Si fornisca la definizione ricorsiva utile al calcolo del minimo numero di monete necessarie per fornire esattamente un resto pari a R.
+(Si supponga che, per ogni taglio T[i], siano disponibili infinite monete)
+
+KNAPSACK(K, N)
+    SORT()
+    IF N = 0 OR K = 0 THEN
+        RETURN 0
+    ENDIF
+
+    IF P[N-1] > K THEN
+        RETURN KNAPSACK(K, N-1) // Ignora l'oggetto attuale
+    ENDIF
+        // Calcola il massimo tra includere o meno l'oggetto attuale
+    RETURN MAX(P[N-1] + KNAPSACK(K - P[N-1], N-1),KNAPSACK(K, N-1))

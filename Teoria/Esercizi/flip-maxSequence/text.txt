@@ -1,0 +1,4 @@
+Una sequenza numerica, di lunghezza n, si dice flip-max se l'lemento di posizione i è più grande (o uguale) dell'elemento di posizione n-1-i, per i <=n/2.
+Ad esempio la sequenza <4,2,7,8,3,5,1,4> è una sequenza flip-max, mentre la sequenza <3,4,5,1,6,3,1> non lo è poiché 5 (posizione 2) è più piccolo di 6 (posizione 4).
+Si fornisca una funzione ricorsiva che, data in input un sequenza numerica di lunghezza n, calcoli la lunghezza della più lunga sotto-sequenza flip-max in essa contenuta.
+La funzione dovrà prendere in input solo la stringa e la sua lunghezza.
